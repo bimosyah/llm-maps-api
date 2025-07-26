@@ -1,6 +1,6 @@
 # 🗺️ LLM Maps API
 
-This project is a lightweight travel assistant powered by a **local LLM (via LM Studio)** and the **Google Maps API**. It provides an API and a simple web UI to answer questions like:
+This project is a lightweight travel assistant powered by a **local LLM (via LM Studio)**, **OpenAI API** and the **Google Maps API**. It provides an API and a simple web UI to answer questions like:
 
 > "Where to eat in Bandung?"  
 > "Best coffee shop in Jakarta?"  
@@ -15,10 +15,12 @@ This project is a lightweight travel assistant powered by a **local LLM (via LM 
 
 ## 🔧 Features
 
-- 🧠 Uses local LLM (e.g. Mistral 7B) to interpret natural language queries
+- 🧠 Uses local LLM mathstral-7b-v0.1 via LM Studio to interpret natural language queries
+- ☁️ Supports OpenAI gpt-3.5-turbo as optional comparison
 - 📍 Extracts and searches place info using **Google Places API (New)**
 - 🗺️ Displays embedded map and external link to Google Maps
 - ⚡ Built with **FastAPI** and **Streamlit** (no frontend JS needed)
+- 🔀 Compare responses from both LLM sources side by side
 
 ---
 
@@ -71,6 +73,7 @@ Restrict it to API: <br>
 Create a .env file in the root directory:
 ```bash
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
 LLM_ENDPOINT=http://localhost:1234/v1
 ```
 

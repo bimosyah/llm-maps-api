@@ -1,4 +1,3 @@
-import json
 import os
 
 import requests
@@ -20,21 +19,12 @@ def get_place_info(place_name: str):
         "textQuery": place_name
     }
 
-    # 🔍 DEBUG PRINT: Show request details
-    print("\n=== REQUEST DEBUG ===")
-    print("URL:", url)
-    print("Headers:", json.dumps(headers, indent=2))
-    print("Body:", json.dumps(body, indent=2))
-
     response = requests.post(url, headers=headers, json=body)
 
     # Raise if error (will show full trace)
     response.raise_for_status()
 
-    # 🔍 DEBUG PRINT: Response
     data = response.json()
-    print("\n=== RESPONSE DEBUG ===")
-    print(json.dumps(data, indent=2))
 
     if "places" in data and data["places"]:
         place = data["places"][0]
