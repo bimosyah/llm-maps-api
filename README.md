@@ -10,7 +10,7 @@ This project is a lightweight travel assistant powered by a **local LLM (via LM 
 
 ## 📸 Preview
 
-![app.png](images/app.png)
+![app.png](images/app_new.png)
 ---
 
 ## 🔧 Features
