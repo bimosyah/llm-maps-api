@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variable files
+.env
+
+# PyCharm IDE files
+.idea/
+
+# VS Code (if you ever switch)
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Logs and caches
+*.log
+.cache/
+*.sqlite3
+
+# pytest cache
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# FastAPI/uvicorn reload artifacts
+*.pid
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.cache/
+nosetests.xml
+test-output/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
