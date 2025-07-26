@@ -4,7 +4,7 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()
-LLM_ENDPOINT = os.getenv("LLM_ENDPOINT", "http://localhost:1234/v1")
+LLM_ENDPOINT = os.getenv("LLM_ENDPOINT")
 
 
 def ask_llm(prompt: str) -> str:
